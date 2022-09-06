@@ -1,0 +1,24 @@
+<meta charset='utf-8'>
+<form action='4.multiOut.jsp'>
+	<fieldset>
+		<input type='checkbox' name='letter' value='politics'/>정치
+		<input type='checkbox' name='letter' value='economics'/>경제
+		<input type='checkbox' name='letter' value='culture'/>문화
+	</fieldset> <!-- 파라미터 이름은 1개로 통일해야한다 > 이름이 같으면 그룹으로 묶인다,
+	politics와 economics, culture를 원소로 가진 배열이 된다, 체크박스는 밸류 여러개를 선택할 수 있다 -->
+
+	<fieldset>
+		<input type='radio' name='gender' value='male'/>남
+		<input type='radio' name='gender' value='female'/>여
+	</fieldset> <!-- 라디오는 밸류를 1개만 선택할 수 있다 -->
+	
+	<fieldset>
+		<select name='job' multiple>
+			<option value='developer'>개발자</option> <!-- value값은 최대한 0으로 맞춘다 -->
+			<option value='planner'>기획자</option>
+			<option value='dba'>DBA</option>
+		</select>
+	</fieldset>
+	
+	<input type='submit'/>
+</form>
