@@ -16,7 +16,7 @@ public class GetPost extends HttpServlet {
 		throws ServletException, IOException {
 		int num1 = 1;
 		int num2 = 2;
-			
+		// GetPost 중복코드를 제거 > service 사용	
 		res.setContentType("text/html; charset=utf-8");
 		PrintWriter out = res.getWriter();
 		out.println("<h2>" + req.getMethod() +"</h2>");

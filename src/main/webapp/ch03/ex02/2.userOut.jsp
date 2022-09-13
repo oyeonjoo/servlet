@@ -10,3 +10,4 @@
 	<li>나이: <%= age %></li>
 	<li>생일: <%= birthday %></li>
 </ul>
+<!-- user가 입력하지 않고 제출하면, empty string이 출력된다 -->
