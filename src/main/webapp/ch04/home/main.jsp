@@ -9,7 +9,7 @@
 	<button type='submit'>담기</button>
 	<button type='submit' formaction='cartOut.jsp'>보기</button>
 </form>
-<%
+<%  
 	String msg = request.getParameter("msg");
-	if(msg != null) out.println(msg);
+	if(msg != null) out.println(msg); // 에러 메세지 출력
 %>
